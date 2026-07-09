@@ -24,6 +24,31 @@
                 font-weight: bold;
                 margin-top: 20px;
             }
+            button:hover {
+                backgroung-color: white;
+                transform: scale(1.1);
+                transition: 0.3s;
+            }
+            a:hover {
+                color: #ff5722;
+                text-decoration: none;
+                transition: 0.3s;
+                input[type="text"], textarea {
+                    width: 100%;
+                    padding: 12px;
+                    border: 2px solid #ccc;
+                    border-radius: 8px;
+                    box-sizing: border-box;
+                    font-family: inherit;
+                    margin-bottom: 15px;
+                    transition: 0.3s;
+                }
+
+                input[type="text"]:focus, textarea:focus {
+                    border-color: #ff5722;
+                    outline: none;
+                }
+            }
         </style>
     </head>
     <body>
@@ -37,6 +62,15 @@
             <li>Dominar JavaScript (Interactividad)</li>
         </ul>
         <a href="https://github.com" target="_blank">Visitar mi futuro GitHub</a>
+        <hr>
+        <h2>Contáctame</h2>
+        <form>
+            <input type="text" placeholder="Tu Nombre">
+            <br><br>
+            <textarea placeholder="Escribe tu mensaje aquí..." rows="4"></textarea>
+            <br><br>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
         <button onclick="alert('¡wow, mi primer código en Javascript funciona!')">¡haz clic aquí!</button>
     </body>
 </html>
